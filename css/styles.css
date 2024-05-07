@@ -23,33 +23,71 @@ h1{
     font-weight:500 ;
     font-size: 36px;
     color: white;
+
+    display: flex;
+    align-items: center;
+
+    margin: 0;
 }
 h2{
+    margin-top: 0;
+    padding-top: 55px;
+
     font-family: "Playfair Display", serif;
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: 600;
     text-transform: uppercase;
 }
 h3{
     font-family: "Playfair Display", serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 2.4rem;
 }
+.infolettre .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.infolettre button{
+    height: 45px;
+    width: 219px;
+   
+    background-color: #F25116;
+    text-align: center;
+    border: 0 solid;
 
+    font-size: 1.8rem;
+    font-family:"Nunito Sans", sans-serif ;
+    color: white;
+}
 /*----------------------------------------------------------------------------
     Mise en page
     Grilles, wrapper, etc.
 ----------------------------------------------------------------------------*/
 .wrapper{
     max-width: 1200px;
+    margin: 0 auto;
 }
-header nav{
+header .wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
-header nav ul li{
+header li{
     display: flex;
     align-items: flex-end;
+}
+.detente{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: auto;
+    gap: 19px;
+}
+.decouverte{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: auto;
+    gap: 19px;
 }
 /*----------------------------------------------------------------------------
     Modules
@@ -61,6 +99,91 @@ header img{
 }
 header{
     background-color: #73221A;
+    max-height: 85px;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.8rem;
+}
+
+.hero{
+    background-image: url(../images/Hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 405px;
+}
+.hero p{
+    padding-top: 150px;
+   margin: 0;
+
+    display: flex;
+    justify-content: center;
+    
+    
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 3.6rem;
+    color: white;
+    text-align: center;
+}
+.infolettre{
+    background-color:#F2EDD5 ;
+    
+    height: 135px;
+}
+.infolettre p{
+    margin-top: 0;
+    padding-top: 55px;
+
+    font-size: 30px;
+    font-weight: 300;
+    font-family: "Quicksand", sans-serif;
+}
+.produits{
+    background-color: #D6D9D2;
+}
+.produits p{
+    font-size: 1.6rem;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+}
+.detente img{
+    width: 285px;
+    height: 210px;
+
+    border: solid 3px #F2EDD5;
+}
+.detente p{
+    font-size: 2.2rem;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    margin-top: 0 ;
+}
+.decouverte img{
+    width: 285px;
+    height: 210px;
+
+    border: solid 3px #F2EDD5;
+}
+.decouverte p{
+    font-size: 2.2rem;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    margin-top: 0 ;
+}
+.produits button{
+    border: solid #F25116 2px;
+    background-color: #D6D9D2;
+    height: 63px;
+    width: 385px;
+
+    font-size: 2.4rem;
+    color: #F25116;
+    font-weight: 600;
+    font-family:"Nunito Sans", sans-serif ;
+
 }
 /*----------------------------------------------------------------------------
     Aide à la mise en page
