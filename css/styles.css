@@ -89,6 +89,56 @@ header li{
     grid-row: auto;
     gap: 19px;
 }
+.texte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.allo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grille{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.nom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 0;
+}
+.propos p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.0rem;
+    font-weight: 600;
+    font-family:"Quicksand", sans-serif ;
+    text-align: center;
+}
+.produits a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+}
+.reseau{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+.haut{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 /*----------------------------------------------------------------------------
     Modules
     Blocs
@@ -184,6 +234,71 @@ header a{
     font-weight: 600;
     font-family:"Nunito Sans", sans-serif ;
 
+}
+.team p{
+    font-size: 1.8rem;
+    font-family:"Nunito Sans", sans-serif ;
+    text-align: center;
+}
+.team{
+    background-color: #D6D9D2;
+}
+
+.team img{
+    width:385px ;
+    height: 385px;
+
+    border: solid 3px #F2EDD5;
+}
+.grille p{
+    margin-top: 0;
+}
+
+.logo{
+    width: 65px;
+    height: 98px;
+    
+}
+.propos button{
+    height: 56px;
+    width: 283px;
+
+    background-color: #F25116;
+    border: 0;
+
+    font-size:1.8rem ;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.propos a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.propos{
+    background-color: #D6D9D2;
+}
+
+footer .wrapper a{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.reseau a{
+    text-decoration: none;
+    font-size:2.0rem ;
+    color: white;
+}
+.reseau span{
+    font-size: 20px;
+}
+footer{
+    background-color: #73221A;
 }
 /*----------------------------------------------------------------------------
     Aide à la mise en page
