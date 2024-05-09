@@ -43,6 +43,69 @@ h3{
     font-weight: bold;
     font-size: 2.4rem;
 }
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*----------------------------------------------------------------------------
+                                HEADER
+----------------------------------------------------------------------------*/
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header li{
+    display: flex;
+    align-items: flex-end;
+}
+
+
+header img{
+    height: 81px;
+    width: 54px;
+}
+header{
+    background-color: #73221A;
+
+    max-height: 85px;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.8rem;
+}
+nav a:hover{
+    color: #F2C166;
+}
+/*----------------------------------------------------------------------------
+                                HERO
+----------------------------------------------------------------------------*/
+.hero{
+    background-image: url(../images/Hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 405px;
+}
+.hero p{
+    padding-top: 150px;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    
+    
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 3.6rem;
+    color: white;
+
+    text-align: center;
+}
+/*----------------------------------------------------------------------------
+                             INFOLETTRE
+----------------------------------------------------------------------------*/
 .infolettre .wrapper{
     display: flex;
     justify-content: space-between;
@@ -60,23 +123,26 @@ h3{
     font-family:"Nunito Sans", sans-serif ;
     color: white;
 }
+
+.infolettre button:hover{
+    background-color: #F2C166;
+}
+.infolettre{
+    background-color:#F2EDD5 ;
+    
+    height: 135px;
+}
+.infolettre p{
+    margin-top: 0;
+    padding-top: 55px;
+
+    font-size: 30px;
+    font-weight: 300;
+    font-family: "Quicksand", sans-serif;
+}
 /*----------------------------------------------------------------------------
-    Mise en page
-    Grilles, wrapper, etc.
+                          DESTINATIONS
 ----------------------------------------------------------------------------*/
-.wrapper{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-header .wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-header li{
-    display: flex;
-    align-items: flex-end;
-}
 .detente{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -95,32 +161,6 @@ header li{
     align-items: center;
     
 }
-.allo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.grille{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.nom{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-bottom: 0;
-}
-.propos p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 2.0rem;
-    font-weight: 600;
-    font-family:"Quicksand", sans-serif ;
-    text-align: center;
-}
 .produits a{
     display: flex;
     justify-content: center;
@@ -128,69 +168,8 @@ header li{
 
     text-decoration: none;
 }
-.reseau{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 5px;
-}
-.haut{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-/*----------------------------------------------------------------------------
-    Modules
-    Blocs
-----------------------------------------------------------------------------*/
-header img{
-    height: 81px;
-    width: 54px;
-}
-header{
-    background-color: #73221A;
-    max-height: 85px;
-}
-header a{
-    color: white;
-    text-decoration: none;
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 1.8rem;
-}
 
-.hero{
-    background-image: url(../images/Hero.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 405px;
-}
-.hero p{
-    padding-top: 150px;
-   margin: 0;
 
-    display: flex;
-    justify-content: center;
-    
-    
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 400;
-    font-size: 3.6rem;
-    color: white;
-    text-align: center;
-}
-.infolettre{
-    background-color:#F2EDD5 ;
-    
-    height: 135px;
-}
-.infolettre p{
-    margin-top: 0;
-    padding-top: 55px;
-
-    font-size: 30px;
-    font-weight: 300;
-    font-family: "Quicksand", sans-serif;
-}
 .produits{
     background-color: #D6D9D2;
 }
@@ -209,6 +188,7 @@ header a{
     font-size: 2.2rem;
     font-family: "Nunito Sans", sans-serif;
     font-weight: 600;
+
     margin-top: 0 ;
 }
 .decouverte img{
@@ -221,11 +201,72 @@ header a{
     font-size: 2.2rem;
     font-family: "Nunito Sans", sans-serif;
     font-weight: 600;
+
     margin-top: 0 ;
 }
+
+
+.produits article{
+    position: relative;
+}
+
+.produits article p{
+    position: absolute;
+    top: 85%;
+
+    width: 100%;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-size:1.4rem ;
+    font-family:"Nunito Sans", sans-serif ;
+    font-weight: 300;
+    color: white;
+
+    background-color: #F2C166;
+
+    margin: 0;
+   
+    display: none;
+}
+.produits article:hover p{
+    display: block;
+
+}
+.produits article:hover img{
+   border-color: #F2C166;
+}
+.produits article:hover h4{
+    display: block;
+}
+.produits article h4{
+    position: absolute;
+    top: 65%;
+
+    width: 100%;
+
+    text-decoration: none;
+    text-align: center;
+
+    color: white;
+    font-size:2.0rem ;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+   
+    background-color: #F2C166;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+
+    display: none;
+}
+
 .produits button{
     border: solid #F25116 2px;
     background-color: #D6D9D2;
+
     height: 63px;
     width: 385px;
 
@@ -235,6 +276,27 @@ header a{
     font-family:"Nunito Sans", sans-serif ;
 
 }
+.produits button:hover{
+    border-color: #F2C166 ;
+    color: #F2C166;
+}
+
+/*----------------------------------------------------------------------------
+                         NOTRE ÉQUIPE
+----------------------------------------------------------------------------*/
+.grille{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.nom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 0;
+}
+
+
 .team p{
     font-size: 1.8rem;
     font-family:"Nunito Sans", sans-serif ;
@@ -253,12 +315,30 @@ header a{
 .grille p{
     margin-top: 0;
 }
-
-.logo{
-    width: 65px;
-    height: 98px;
-    
+.team img:hover{
+    border-color: #F2C166;
 }
+/*----------------------------------------------------------------------------
+                         NOUS CONTACTER
+----------------------------------------------------------------------------*/
+.allo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.propos p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.0rem;
+    font-weight: 600;
+    font-family:"Quicksand", sans-serif ;
+    text-align: center;
+}
+
+
 .propos button{
     height: 56px;
     width: 283px;
@@ -274,6 +354,10 @@ header a{
     align-items: center;
     justify-content: center;
 }
+.propos button:hover{
+    background-color: #F2C166;
+}
+
 .propos a{
     text-decoration: none;
     display: flex;
@@ -282,23 +366,94 @@ header a{
 }
 .propos{
     background-color: #D6D9D2;
+    padding-bottom: 50px;
 }
+/*----------------------------------------------------------------------------
+                                CARTE
+----------------------------------------------------------------------------*/
+.logo{
+    width: 65px;
+    height: 98px;
+
+    position: relative;
+    top: 100px;
+    
+}
+.carte{
+    background-image: url(../images/Emplacement.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 505px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+/*----------------------------------------------------------------------------
+                                FOOTER
+----------------------------------------------------------------------------*/
+footer .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.reseau{
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
 
 footer .wrapper a{
     display: flex;
     justify-content: flex-start;
 }
-
 .reseau a{
     text-decoration: none;
+
     font-size:2.0rem ;
     color: white;
 }
 .reseau span{
-    font-size: 20px;
+    font-size: 4.3rem;
 }
 footer{
     background-color: #73221A;
+    padding: 45px 117px; 
+}
+footer p{
+    margin: 0;
+    padding-top: 20px;
+
+    font-size: 1.8rem;
+    font-family:  "Nunito Sans", sans-serif;
+    color: white;
+}
+footer a{
+    display: flex;
+    align-items: center;
+}
+.haut{
+    border: solid white 3px;
+    border-radius: 100%;
+
+    text-decoration: none;
+    color: white;
+    font-size: 4.3rem;
+    padding: 5px;
+}
+footer a:hover{
+    color: #F2C166;
+}
+footer a p:hover{
+    color: #F2C166;
+}
+.haut:hover{
+    color: #F2C166;
+    border-color: #F2C166;
 }
 /*----------------------------------------------------------------------------
     Aide à la mise en page
