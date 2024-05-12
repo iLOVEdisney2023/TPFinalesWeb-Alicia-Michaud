@@ -560,6 +560,141 @@ footer a p:hover{
 
 /*AUCUN CHANGEMENT*/
 
+/*------------------------------FICHE.HTML-----------------------------------*/
+/*----------------------------------------------------------------------------
+                                HEADER
+----------------------------------------------------------------------------*/
+
+/*AUCUN CHANGEMENT*/
+
+/*----------------------------------------------------------------------------
+                                BEST CHOICE
+----------------------------------------------------------------------------*/
+.bestchoice .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bestchoice img{
+    width: 500px;
+    height: 700px;
+
+    margin-top: 50px;
+    margin-right: 25px;
+
+    border: solid 3px #F2EDD5;
+}
+.bestchoice{
+    background-color: #CDCDCD;
+}
+.bestchoice p{
+    font-family:"Nunito Sans", sans-serif ;
+    font-size: 1.8rem;
+}
+.bestchoice span{
+    font-size: 2.0rem;
+    font-style: italic;
+    
+}
+.bestchoice a{
+    border: solid 2px #F25116;
+
+    padding: 10px;
+    padding-left:20px ;
+    padding-right: 20px;
+
+    font-size: 1.8rem;
+    font-family:"Nunito Sans", sans-serif ;
+    color: #F25116;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.bestchoice h5{
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+.bestchoice .pp{
+    border: 0;
+    background-color: #F25116;
+
+    color: white;
+
+    max-width: 300px;
+}
+.bestchoice .bb{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.bestchoice img:hover{
+    border-color: #F2C166;
+}
+.bestchoice a:hover{
+    border-color: #F2C166;
+    color: black;
+}
+.bestchoice .pp:hover{
+    background-color: #F2C166;
+    color: black;
+}
+/*----------------------------------------------------------------------------
+                                AIMER AUSSI
+----------------------------------------------------------------------------*/
+.aimer{
+    background-color: #CDCDCD;
+    padding: 50px;
+    padding-top: 100px;
+}
+.aimer img{
+    width: 600px;
+    height: 400px;
+
+    border: #F2EDD5 solid 2px;
+}
+.aimer h5{
+    margin-top: 0;
+}
+.aimer .wrapper h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aimer .place{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+}
+.aimer article a{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    text-decoration: none;
+
+    font-size: 1.8rem;
+    color: #F25116;
+}
+.aimer img:hover{
+    border-color: #F2C166;
+}
+.aimer a:hover{
+    color:black;
+}
+/*----------------------------------------------------------------------------
+                                FOOTER
+----------------------------------------------------------------------------*/
+
+/*AUCUN CHANGEMENT*/
+
 /*----------------------------------------------------------------------------
     Aide à la mise en page
     Classes utilitaires pouvant être là ou pas (JS)
