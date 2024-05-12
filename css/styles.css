@@ -138,8 +138,12 @@ nav a:hover{
     font-size: 1.8rem;
     font-family:"Nunito Sans", sans-serif ;
     color: white;
+    
 }
-
+.infolettre a{
+    text-decoration: none;
+    color: white;
+}
 .infolettre button:hover{
     background-color: #F2C166;
 }
